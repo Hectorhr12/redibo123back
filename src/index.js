@@ -30,7 +30,7 @@ app.use(cookieParser(process.env.COOKIE_SECRET || "redibo-secret"))
 // Configuración de CORS
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000",
+    origin: process.env.FRONTEND_URL || "https://redibo123front.onrender.com",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization", "Cookie"],
